@@ -1,15 +1,14 @@
 # JavaScript Snake
 Welcome to the Ireland quiz game, a short and simple game to test your knowledge on the island of Ireland!
 
-You can find the live site [here](https://rikkiebobby.github.io/Project2-JavaScriptSnake/).
+You can find the live site [here](https://rikkiebobby.github.io/JS-Ireland-Quiz/).
 
-![Ireland Quiz Game!](assets/images/snakeresponsivness.png)
+![Ireland Quiz Game!](assets/images/quizresponsive.png)
 # Contents
 + [User Experience](#user-experience)
   + [User Stories](#user-stories)
   + [Design](#design)
     + [Overall Feel](#overall-feel)
-    + [Colour Scheme](#colour-scheme)
     + [Typography](#typography)
     + [Sound](#sound)
 + [Features](#features)
@@ -35,9 +34,9 @@ You can find the live site [here](https://rikkiebobby.github.io/Project2-JavaScr
 # User Experience
 ## User Stories
 #### As a user: 
-+ 
-+ I want the site to be easy to navigate through so that my child does not require assistance with the UI. 
-+ I want my child to feel a sense of acomplishment when playing.
++ I want to know the purpose when i open the page
++ move fluidly throught the game
++ test my knowledge on General information about Ireland
 ## Design
 ### Overall Feel
 I wanted the page to have a feeling of irish colors to present when playing the game
@@ -63,7 +62,6 @@ I wanted the page to have a feeling of irish colors to present when playing the 
 + [GitPod](https://www.gitpod.io/) used to develop project and organise version control.
 + [GitHub Pages](https://pages.github.com/) Pages used to deploy the site.
 + [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
-+ [PowerMapper](https://www.powermapper.com/) used to check compatibility with older browsers.
 + [AmIResponsive](https://ui.dev/amiresponsive) used to check site was responsive on different screen sizes.
 ---
 ---
@@ -74,24 +72,22 @@ At the completion or heavy editing of sections, I used the following to check my
   + All pages came back with no errors.
 + [CSS](https://jigsaw.w3.org/css-validator/)
   + CSS came back with no errors. 
-  + CSS did display warnings but they're all in relation to vendor prefixes. 
 + [JavaScript](https://jshint.com/)
 
   + JavaScript did display some lines of code which were missing semi-colons at the end of statements which were fixed
 
-    ![JS Validator Results](assets/images/jswarnings.png)
-  + The validator did display these warnings of let being available, however this did not affect the code in any breaking way
+    ![JS Validator Results](asset/images/quzijserror.png)
+  + The validator did display these warnings of const being available, however this did not affect the code in any breaking way
 
-    ![Lighthouse Desktop Results](assets/images/README/testing/js-validator-02.PNG)
+    ![Lighthouse Desktop Results](assets/images/lighthousequiz.png)
 ## Lighthouse Testing
 I used Chromes Lighthouse tools to test site performance. I check bothed desktop and mobile performances. Below are the screenshots from both tests:
 ### Lighthouse Desktop
-![Lighthouse Desktop Results](assets/images/lighthousedesktop.png)
-### Lighthouse Mobile
-![Lighthouse Mobile](assets/images/lighthousemobile.png)
-## Bugs and Fixes
-+ One bug which I encountered was that when the snake game was linked up to be played using the arrow keys on the keyboard, it would move the webpage up and down and side to side which made it difficult to react to what was happening, to fix this I decided to switch from using the arrow keys in the change direction function to the WASD keys instead which solved the issue easily.
-+ another bug I encountered was the appearence of and x scroll on the webpage which was not intended to be there, though small, it does distract from the user experience slightly. I tried fixing this by reducing the with of the body in CSS, but made the page look rather messy, still working on a fix for this at the moment.
+![Lighthouse Desktop Results](assets/images/lighthousequiz.png)
+## Fixed Bugs
++ One bug  I encountere was when the proper variables had not been defined for the shuffle questions and current question index, this was a simple fix which required them being changed from const to let 
+## Known Bugs
++ At the moment the slect button is not working for the answer buttons, still working on a fix
 # Deployment
 ## Deployment through GitHub Pages
 This site was deployed through GitHub Pages using the following steps:
@@ -122,10 +118,7 @@ This site was deployed through GitHub Pages using the following steps:
 ---
 # Credits
 ## Code
-+ A big thank you to Kenny Yip for supplying a tutorial on youtube on how to create the snake game in JavaScript and helping me learn how to use variations and functions effectivly [KennysTutoial](https://www.youtube.com/watch?v=baBq5GAL0_U&t=1039s)
-+ I'd also like to thank w3docs for supplying the code which I used to create the multicolor effect on the main-heading on the page [w3docs](https://www.w3docs.com/snippets/css/how-to-create-a-multicolor-text-in-html-and-css.html#:~:text=This%20is%20the%20easiest%20way,names%20of%20your%20preferred%20colors)
 + code institute for supplying the extremely helpful walk through video of the love maths project by Anna Greaves
-+ Freepik for supplying the background used on the page [freepik](https://www.freepik.com/free-vector/detailed-jungle-background_13817745.htm#query=jungle&position=37&from_view=keyword&track=sph#position=37&query=jungle)
 ## Content
 All content was written by Richard Nolan (website creator)
 ## Acknowledgements
