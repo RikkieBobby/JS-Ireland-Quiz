@@ -36,4 +36,27 @@ body {
 .btn {
     font-size: xx-large;
     border-radius: 10px;
+    transition: 1s;
+    color: white;
+    background-color: rgb(255, 153, 1);
+}
+
+#start-btn, #next-btn {
+    margin: 10px;
+}
+
+.btn:hover {
+    color: rgb(255, 153, 1);
+    background-color: white;
+    transition: 1s;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hide {
+    display: none;
 }
